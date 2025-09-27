@@ -5,9 +5,6 @@ class VirtViewer < Formula
   sha256 "d23bc0a06e4027c37b8386cfd0286ef37bd738977153740ab1b6b331192389c5"
   revision 0
 
-  # 支持 macOS 10.15 及以上版本
-  depends_on macos: :catalina
-
   depends_on "gettext" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
