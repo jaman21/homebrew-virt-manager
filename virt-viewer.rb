@@ -1,9 +1,12 @@
 class VirtViewer < Formula
   desc "App for virtualized guest interaction"
   homepage "https://virt-manager.org/"
-  url "https://releases.pagure.org/virt-viewer/virt-viewer-11.0.tar.xz"
-  sha256 "a43fa2325c4c1c77a5c8c98065ac30ef0511a21ac98e590f22340869bad9abd0"
+  url "https://releases.pagure.org/virt-viewer/virt-viewer-10.0.tar.xz"
+  sha256 "d23bc0a06e4027c37b8386cfd0286ef37bd738977153740ab1b6b331192389c5"
   revision 0
+
+  # 支持 macOS 10.15 及以上版本
+  depends_on macos: :catalina
 
   depends_on "gettext" => :build
   depends_on "meson" => :build
